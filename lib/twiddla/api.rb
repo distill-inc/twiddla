@@ -1,7 +1,8 @@
 module Twiddla
   class API
     class << self
-      attr_accessor :username, :password
+      attr_accessor :username
+      attr_writer   :password
 
       def create_user(options)
         api_call('CreateUser', options)
@@ -46,7 +47,7 @@ module Twiddla
       end
 
       def auth_params
-        { username: username, password: password }
+        { username: @username, password: @password }
       end
 
       LEADING_NEGATIVE_INTEGER = /-\d/
