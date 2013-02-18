@@ -50,7 +50,7 @@ module Twiddla
         { username: @username, password: @password }
       end
 
-      LEADING_NEGATIVE_INTEGER = /-\d/
+      LEADING_NEGATIVE_INTEGER = /^-\d/
       def check_for_errors_and_return(response_body)
         raise APIError.new(response_body) if response_body.match(LEADING_NEGATIVE_INTEGER)
         response_body
