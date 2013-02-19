@@ -1,4 +1,5 @@
-Twiddla
+![Twiddla](http://www.twiddla.com/images/logo-corner3.png)
+
 ## Installation
 
 http://rubygems.org/gems/twiddla
