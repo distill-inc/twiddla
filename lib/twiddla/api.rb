@@ -47,7 +47,7 @@ module Twiddla
       end
 
       def auth_params
-        { username: @username, password: @password }
+        { username: username, password: @password }
       end
 
       LEADING_NEGATIVE_INTEGER = /^-\d/
